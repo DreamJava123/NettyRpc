@@ -2,52 +2,54 @@ package com.nettyrpc.protocol;
 
 /**
  * RPC Request
+ *
  * @author huangyong
  */
 public class RpcRequest {
-    private String requestId;
-    private String className;
-    private String methodName;
-    private Class<?>[] parameterTypes;
-    private Object[] parameters;
 
-    public String getRequestId() {
-        return requestId;
-    }
+  private String requestId;
+  private String className;
+  private String methodName;
+  private Class<?>[] parameterTypes;
+  private Object[] parameters;
 
-    public void setRequestId(String requestId) {
-        this.requestId = requestId;
-    }
+  public String getRequestId() {
+    return requestId;
+  }
 
-    public String getClassName() {
-        return className;
-    }
+  public void setRequestId(String requestId) {
+    this.requestId = requestId;
+  }
 
-    public void setClassName(String className) {
-        this.className = className;
-    }
+  public String getClassName() {
+    return className;
+  }
 
-    public String getMethodName() {
-        return methodName;
-    }
+  public void setClassName(String className) {
+    this.className = className;
+  }
 
-    public void setMethodName(String methodName) {
-        this.methodName = methodName;
-    }
+  public String getMethodName() {
+    return methodName;
+  }
 
-    public Class<?>[] getParameterTypes() {
-        return parameterTypes;
-    }
+  public void setMethodName(String methodName) {
+    this.methodName = methodName;
+  }
 
-    public void setParameterTypes(Class<?>[] parameterTypes) {
-        this.parameterTypes = parameterTypes;
-    }
+  public Class<?>[] getParameterTypes() {
+    return parameterTypes;
+  }
 
-    public Object[] getParameters() {
-        return parameters;
-    }
+  public void setParameterTypes(Class<?>[] parameterTypes) {
+    this.parameterTypes = parameterTypes;
+  }
 
-    public void setParameters(Object[] parameters) {
-        this.parameters = parameters;
-    }
+  public Object[] getParameters() {
+    return parameters;
+  }
+
+  public void setParameters(Object[] parameters) {
+    this.parameters = parameters;
+  }
 }

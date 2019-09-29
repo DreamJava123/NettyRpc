@@ -2,38 +2,40 @@ package com.nettyrpc.protocol;
 
 /**
  * RPC Response
+ *
  * @author huangyong
  */
 public class RpcResponse {
-    private String requestId;
-    private String error;
-    private Object result;
 
-    public boolean isError() {
-        return error != null;
-    }
+  private String requestId;
+  private String error;
+  private Object result;
 
-    public String getRequestId() {
-        return requestId;
-    }
+  public boolean isError() {
+    return error != null;
+  }
 
-    public void setRequestId(String requestId) {
-        this.requestId = requestId;
-    }
+  public String getRequestId() {
+    return requestId;
+  }
 
-    public String getError() {
-        return error;
-    }
+  public void setRequestId(String requestId) {
+    this.requestId = requestId;
+  }
 
-    public void setError(String error) {
-        this.error = error;
-    }
+  public String getError() {
+    return error;
+  }
 
-    public Object getResult() {
-        return result;
-    }
+  public void setError(String error) {
+    this.error = error;
+  }
 
-    public void setResult(Object result) {
-        this.result = result;
-    }
+  public Object getResult() {
+    return result;
+  }
+
+  public void setResult(Object result) {
+    this.result = result;
+  }
 }
